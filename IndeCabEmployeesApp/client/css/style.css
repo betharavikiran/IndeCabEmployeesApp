@@ -1,0 +1,23 @@
+
+.pull-right {
+    float: right
+}
+
+.pull-left {
+    float: left
+}
+
+.app-title{
+    padding: 15px;
+    padding-left: 75px;
+}
+
+.employee-record{
+    padding: 10px;
+}
+
+.editEmployee{
+    border: solid 1px lightgray;
+    padding : 15px;
+    box-shadow: 2px 2px 4px 4px grey;
+}

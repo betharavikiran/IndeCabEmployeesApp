@@ -1,0 +1,10 @@
+<template name="employees">
+    <div class="page-content-wrapper">
+        <div class="pull-right">
+            <h3><a href="{{pathFor 'createEmployee'}}" title="Create Employee"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true" ></span></a></h3>
+        </div>
+        {{#each employees}}
+            {{>viewEmployee}}
+        {{/each}}
+    </div>
+</template>

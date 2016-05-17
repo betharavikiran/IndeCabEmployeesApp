@@ -1,0 +1,30 @@
+<template name="viewEmployee">
+    <div class="employee-record">
+    <legend><span class="glyphicon glyphicon-user" aria-hidden="true" ></span>{{first_name}} {{last_name}}</legend>
+        <div class="row col-sm-10">
+            <div class="col-sm-5">
+                <div>
+                    <p><span class="glyphicon glyphicon-envelope" aria-hidden="true" ></span>{{email}}</p>
+                </div>
+                <div>
+                    <p><span class="glyphicon glyphicon-phone" aria-hidden="true" ></span>{{mobile}}</p>
+                </div>
+                <div>
+                    <p><span class="glyphicon glyphicon-yen" aria-hidden="true" ></span>{{salary}}</p>
+                </div>
+                <div style="padding-left: 5px">
+                    <p>{{gender}}</p>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                    <h4>Address</h4>
+                    <p>{{street}}, {{area}}</p>
+                    <p> {{city}},{{state}}</p>
+                    <p>{{postalCode}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <button id="editEmployee" class="pull-right" type="button"><span class="glyphicon glyphicon-pencil" aria-hidden="true" ></span></button>
+        </div>
+   </div>
+</template>

@@ -1,0 +1,63 @@
+<template name="createEmployee">
+    <a href="{{pathFor 'employees'}}" title="Employees">Back</a>
+    <h3>New Employee</h3>
+    <div>
+          {{#autoForm id="createEmployee" schema="Schema.employees"}}
+                    <div>
+                        <fieldset>
+                            <legend>Personal Details</legend>
+                            <div class="row col-sm-9">
+                                <div class="col-sm-3">
+                                    {{> afQuickField name='first_name' id='first_name' placeholder="First Name *" }}
+                                </div>
+                                <div class="col-sm-3">
+                                    {{> afQuickField name='last_name' id='last_name' placeholder="Last Name *"}}
+                                </div>
+                                <div class="col-sm-3">
+                                    {{> afQuickField name='gender' id='gender' options="allowed" }}
+                                </div>
+                            </div>
+                            <legend>Address</legend>
+                            <div class="row col-sm-9">
+                                <div class="col-sm-3">
+                                    {{> afQuickField name='street' id='street'  placeholder="Apartment no *"}}
+                                </div>
+                                <div class="col-sm-3">
+                                    {{> afQuickField name='area' id='area' }}
+                                </div>
+                                <div class="col-sm-3">
+                                    {{> afQuickField name='city' id='city' options="allowed"}}
+                                </div>
+                            </div>
+                            <div class="row col-sm-9">
+                                <div class="col-sm-3">
+                                    {{> afQuickField name='state' id='state' options="allowed"}}
+                                </div>
+                                <div class="col-sm-3">
+                                    {{> afQuickField name='postalCode' id='postalCode' }}
+                                </div>
+                            </div>
+                            <legend>Contact</legend>
+                            <div class="row col-sm-9">
+                                <div class="col-sm-3">
+                                    {{> afQuickField name='mobile' id='mobile' }}
+                                </div>
+                                <div class="col-sm-3">
+                                    {{> afQuickField name='email' id='email' }}
+                                </div>
+
+                            </div>
+                            <legend>Compensation</legend>
+                            <div class="row col-sm-9">
+                                <div class="col-sm-3">
+                                    {{> afQuickField name='salary' id='salary' }}
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="col-sm-offset-7">
+                        <button type="submit"><span class="glyphicon glyphicon-floppy-disk" aria-hidden="true" ></span></button>
+                    </div>
+             {{/autoForm}}
+    </div>
+</template>
